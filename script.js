@@ -1,10 +1,10 @@
 // Birthday Unlock Logic
 
-const birthDate = new Date("2003-09-16");
+const birthDate = new Date("2003-09-16"); // Replace with her real birthdate if needed
 const currentDate = new Date();
 const contentList = document.getElementById("content-list");
 
-for (let age = 23; age <= 80; age++) {
+for (let age = 21; age <= 80; age++) {
   const unlockDate = new Date(birthDate);
   unlockDate.setFullYear(birthDate.getFullYear() + age);
 
@@ -17,7 +17,7 @@ for (let age = 23; age <= 80; age++) {
     <h2>🎂 ${age}th Birthday</h2>
     ${
       isUnlocked
-        ? `<a href="content/${age}.html" target="_blank">Open Your Message</a>`
+        ? `<a href="content/${age}.html" target="_blank">Your Love Note Awaits tasfi 💌</a>`
         : `<p>🔒 Will unlock on: <strong>${unlockDate.toDateString()}</strong></p>`
     }
   `;
