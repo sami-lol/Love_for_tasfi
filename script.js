@@ -4,7 +4,7 @@ const birthDate = new Date("2003-09-16"); // Replace with her real birthdate if 
 const currentDate = new Date();
 const contentList = document.getElementById("content-list");
 
-for (let age = 21; age <= 80; age++) {
+for (let age = 22; age <= 80; age++) {
   const unlockDate = new Date(birthDate);
   unlockDate.setFullYear(birthDate.getFullYear() + age);
 
